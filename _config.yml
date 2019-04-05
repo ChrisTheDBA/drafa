@@ -2,7 +2,7 @@
 title: Sephi
 description: > # this means to ignore newlines until "baseurl:"
   This just my personal web site. Used to show some product I made or some tech articls I record.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "drafa" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 defaults:
