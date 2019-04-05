@@ -1,0 +1,163 @@
+---
+layout: default
+section_id: about
+skills:
+  - title: iOS Development
+    percent: 85
+  - title: Python Development
+    percent: 70
+  - title: Erlang Development
+    percent: 60
+  - title: System Management
+    percent: 80
+
+#members:
+#  - name: Mark Wayne
+#    position: founder
+#    desc:
+#      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+#    avatar: images/@stock/member-1.jpg
+#    socials:
+#      - icon_class: fa fa-twitter
+#        url: http://twitter.com
+#      - icon_class: fa fa-facebook
+#        url: http://facebook.com
+#  - name: Kate Holms
+#    position: Creative Director
+#    desc:
+#      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+#    avatar: images/@stock/member-2.jpg
+#    socials:
+#      - icon_class: fa fa-twitter
+#        url: http://twitter.com
+#      - icon_class: fa fa-facebook
+#        url: http://facebook.com
+#      - icon_class: fa fa-dribbble
+#        url: http://dribbble.com
+#  - name: Tom Hason
+#    position: Designer
+#    desc:
+#      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+#    avatar: images/@stock/member-3.jpg
+#    socials:
+#      - icon_class: fa fa-twitter
+#        url: http://twitter.com
+#      - icon_class: fa fa-facebook
+#        url: http://facebook.com
+#      - icon_class: fa fa-tumblr
+#        url: http://tumblr.com
+#  - name: Lily Whrem
+#    position: Developer
+#    desc:
+#      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+#    avatar: images/@stock/member-4.jpg
+#    socials:
+#      - icon_class: fa fa-twitter
+#        url: http://twitter.com
+#      - icon_class: fa fa-facebook
+#        url: http://facebook.com
+#clients:
+#  - images/@stock/client-grey-1.png
+#  - images/@stock/client-grey-2.png
+#  - images/@stock/client-grey-3.png
+#  - images/@stock/client-grey-4.png
+#  - images/@stock/client-grey-5.png
+#  - images/@stock/client-grey-6.png
+
+---
+
+<div class='full' style='background: #333'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h2 style='color: #fff;'>About Me</h2>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
+<div class='full'>
+  <div class='row'>
+    <div class='medium-6 columns'>
+      <h3>Introduction</h3>
+      <div class='spacing'></div>
+      <p>This site is all about my creations, such as apps and technic blogs, and also my apps' official support site.</p>
+      <p>The "WAIT" blocks are pending content would be added in future.</p>
+      <p>I'm an experienced <strong>full-stack software engineer</strong>. Working on software developing more than 10 years <Strong>at Shanghai of China</Strong>.
+         When I talk about full-stack, I mean, from product design to publishing App on appStore,
+       such as prototype product design, sometimes I desgin UI, server development, system management, iOS App develpment and production distribution.
+      </p>
+      <p><strong>If you wanna find a freelancer</strong> helping you to implement your idea, feel free to contact me.
+        I will provide consulting service for free, and it's OK you would not let me do the job.</p>
+      <p>There is contact infomation on the footer of site. Any one is OK. Just let me know your requirement, I would provide professional and quality service for you.</p>
+      <div class='two spacing'></div>
+    </div>
+    <div class='medium-6 columns'>
+      <h3>My Primary Skills</h3>
+      <div class='spacing'></div>
+      <div class='mod modBarGraph'>
+        <ul class='bars'>
+          {% for skill in page.skills %}
+            <li>
+              <h4 style=''>
+                {{skill.title}}
+                <strong>{{skill.percent}}%</strong>
+              </h4>
+              <p class='highlighted' data-percent='{{skill.percent}}'></p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='two spacing'></div>
+<!-- <div class='full' style='background: #f5f5f5'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3>The team</h3>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    {% for member in page.members %}
+      <div class='small-6 medium-3 large-3 columns'>
+        <div class='mod modTeamMember style-2'>
+          <div class='member'>
+            <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
+            <div class='overlay'>
+              <ul class='socials'>
+                {% for social in member.socials %}
+                  <li>
+                    <a href='{{social.url}}'>
+                      <i class='{{social.icon_class}}'></i>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <h3>{{member.name}}</h3>
+          <p class='position'>{{member.position}}</p>
+          <p>{{member.desc}}</p>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='two spacing'></div>
+</div> -->
+<!-- <div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3>Our clients</h3>
+      <div class='spacing'></div>
+      <div class='mod modClients' data-slides_to_show='5'>
+        <div class='clients'>
+          {% for client in page.clients %}
+            <div><img alt="" src="{{client}}" /></div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div> -->
